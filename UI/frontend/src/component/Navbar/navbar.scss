@@ -1,0 +1,80 @@
+.navbar {
+    background-color: #282727; // Dark background
+    padding: 15px 0;
+    position: sticky; // Keeps the navbar at the top of the page
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .icon{
+      
+      display: flex;
+      color: white;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin:0px 3px;
+      span{
+        padding: 5px;
+        font-size: 20px;
+      }
+    img{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      border: none;
+    
+    }
+  }
+  }
+  
+  // Navbar menu (the list)
+  .navbar-menu {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; // Centers the nav items
+    align-items: center; // Vertically align the items
+  }
+  
+  // Navbar items (list items)
+  .navbar-menu li {
+    margin: 0 20px; // Adds space between menu items
+  }
+  
+  // Navbar links
+  .navbar-menu a {
+    color: white; // Text color
+    text-decoration: none; // Removes underlines
+    font-size: 16px; // Text size
+    padding: 10px 15px; // Padding around the text
+    border-radius: 5px; // Rounded corners for the links
+    transition: background-color 0.3s ease, transform 0.2s ease; // Smooth hover transition
+  }
+  
+  // Hover effect for navbar links
+  .navbar-menu a:hover {
+    background-color: #575757; // Darker background on hover
+    transform: translateY(-3px); // Slight lift effect on hover
+  }
+  
+  // Optional: Mobile responsive styling
+  @media (max-width: 768px) {
+    .navbar-menu {
+      flex-direction: column; // Stack the navbar items vertically
+      align-items: center; // Center the items when stacked
+    }
+  
+    .navbar-menu li {
+      margin: 10px 0; // Vertical margin for stacked items
+    }
+  
+    .navbar-menu a {
+      font-size: 18px; // Larger font size on mobile
+      padding: 12px 20px; // Adjust padding on mobile
+    }
+  }
